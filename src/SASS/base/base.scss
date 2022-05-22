@@ -1,0 +1,19 @@
+// 1rem = 16px 
+// default settings
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    position: relative;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: #000;
+
+}
+

@@ -1,0 +1,95 @@
+// colors
+
+// $color_primary: #ffc107;
+// $color_primary_light: #ffe459;
+// $color_primary_dark: #ffd369;
+// $color_grey_text: #777;
+// $color_white:#fff;
+// $color_black: rgb(0,0,0);
+// $color_grey_light1: #f7f7f7;
+// $color_grey_dark: rgb(100, 100, 100);
+
+
+// $color_secondary_dark:#090910;
+// $color_secondary_light: #2c2e43;
+
+// $color_tertiary_light: #185adb;
+// $color_tertiary_dark: #3d087b;
+
+// Grid
+$grid_width: 114rem;
+$hotizontal_spacing: 6rem;
+$vertical_spacing_small: 6rem;
+$vertical_spacing: 8rem;
+
+
+//Font sizes
+// $default-font-size: 1.6rem;
+$main_shadaow: -0.5rem 0.5rem 1.5rem #000;
+
+// no letter spacing for arabic
+
+// .letter_spacing{
+//     letter-spacing: 0 !important;
+//     font-family: "lemonada";
+// }
+
+// $font_primary: "FontAwesome" !important;
+// $font_secondary: "FontAwesome";
+
+// .dhs{
+//     font-size: 4rem !important;
+// }
+
+// ************
+// font family
+
+$font-family-primary: 'Baloo 2', cursive;
+$font-family-second: 'Lemonada', cursive;
+$font-family-third: 'Montserrat', sans-serif;
+
+// colors
+$background_color: #c8d5d8;
+$color_bottons: #7b9195;
+$color_hover_btn: #b6c7cb;
+
+$fonts_colors_main: #181715;
+$font_color_second: #c8d5d8;
+
+
+@mixin textHeading{
+    text-align: center;
+    color: 181715;
+    font-size: 4rem;
+    text-shadow: $main_shadaow;
+}
+@mixin textHeadingSecond{
+    text-align: center;
+    color: 181715;
+    font-size: 2rem;
+    // width: 50%;
+    // margin: auto;
+}
+@mixin ButtonStyle{
+    width: 17rem;
+    height: 5rem;
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+    background: white;
+    cursor: pointer;
+    font-family: $font-family-third;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: black;
+}
+
+@mixin imageStyle{
+    width: 25rem;
+    height: 23rem;
+    border-radius: 1rem;
+}
+
+@mixin cardServices {
+    // width: 5rem;
+}

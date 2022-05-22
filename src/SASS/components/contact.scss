@@ -1,0 +1,129 @@
+@import '../base/variables.scss';
+
+section.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100vw;
+    height: 100vh;
+    padding: 12rem 0 20rem 0;
+    clip-path: polygon(1% 1%, 99% 1%, 99% 75%, 1% 100%);
+    z-index: 1;
+    margin-top: -22rem;
+    // background-color: red;
+    background-image: 
+    linear-gradient(to right bottom,
+    rgba($background_color, 0.8),
+    rgba($color_hover_btn, 0.8)),
+    url('../../img/contact.jpg');
+    position: relative;
+    background-position: top;
+    background-size: cover;
+}
+
+section.contacts h1{
+    text-align: center;
+    color: 181715;
+    font-size: 4rem;
+    text-shadow: -0.5rem 0.5rem 1.5rem #000;
+    font-family: "Baloo 2", cursive;
+    padding-bottom: 4rem;
+}
+.contactBox {
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgb(0 0 0 / 54%) 0px 8px 24px;
+        width: 65rem;
+        height: 53rem;
+        align-items: center;
+        border-radius: 2rem;
+        padding: 2rem;
+        background-image: 
+    linear-gradient(to right bottom,
+    rgba($background_color, 0.8),
+    rgba($color_hover_btn, 0.8)),
+    url('../../img/contact.jpg');
+    }
+.contactBox h3{
+    margin-bottom: 3rem;
+}
+.conatctName {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 2rem;
+}
+.contactEmail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 2rem;
+}
+input#firstName{
+    width: 42%;
+    padding: 1rem;
+    outline: none;
+    border-radius: 1rem;
+    border: none;
+}
+input#lastName{
+    width: 42%;
+    padding: 1rem;
+    outline: none;
+    border-radius: 1rem;
+    border: none;
+}
+input#email{
+    width: 42%;
+    padding: 1rem;
+    outline: none;
+    border-radius: 1rem;
+    border: none;
+}
+input#phone{
+    width: 42%;
+    padding: 1rem;
+    outline: none;
+    border-radius: 1rem;
+    border: none;
+}
+input#address {
+    width: 92%;
+    height: 2rem;
+    padding: 1rem;
+    outline: none;
+    border-radius: 1rem;
+    border: none;
+    margin-bottom: 3rem;
+}
+textarea#message {
+    width: 91%;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+button{
+    width: 17rem;
+    height: 5rem;
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+    background: white;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: black;
+    transition: ease-in-out 1.5s;
+}
+button:hover {
+    background-color: #b6c7cb;
+    color: #181715;
+    font-weight: bold;
+}

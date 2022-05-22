@@ -1,0 +1,31 @@
+@import './variables.scss';
+
+
+h1,h2{
+    @include textHeading;
+    font-family: $font-family-primary;
+}
+
+h3,h4{
+    @include textHeadingSecond;
+    font-family: $font-family-second;
+    width: 50%;
+}
+.home .btn{
+    @include ButtonStyle;
+    transition: ease-in-out 1.5s
+}
+
+.gallery img{
+    @include imageStyle
+}
+
+.gallery h1{
+    @include textHeading;
+    color: $font_color_second;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+.services .rowServices .col{
+    @include cardServices
+}

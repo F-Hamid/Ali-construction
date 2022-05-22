@@ -8,44 +8,48 @@ const Navbar = () => {
       <img src={require("../img/logo3.png")} alt="" />
 
       <div className="menu">
-        <div
-          className="mainMenu"
-          onClick={() => {
-            setOpenNav(!openNav);
-          }}
-        >
-          <i class="fa-solid fa-bars"></i>
-        </div>
+        <div className="mainMenu"></div>
         {openNav && (
-          <div className="navList">
-            <li class="navigation">
-              <a href="#home" class="navigationLink">
+          <div
+            onClick={() => {
+              setOpenNav(!openNav);
+            }}
+            className={`navList ${openNav ? "clickedMenu" : ""}`}
+          >
+            <li className="navigation">
+              <a href="#home" className="navigationLink">
                 HOME
               </a>
             </li>
-            <li class="navigation">
-              <a href="#gallery" class="navigationLink">
+            <li className="navigation">
+              <a href="#gallery" className="navigationLink">
                 GALLERY
               </a>
             </li>
-            <li class="navigation">
-              <a href="#services" class="navigationLink">
+            <li className="navigation">
+              <a href="#services" className="navigationLink">
                 SERVICES
               </a>
             </li>
-            <li class="navigation">
-              <a href="#projects" class="navigationLink">
+            <li className="navigation">
+              <a href="#projects" className="navigationLink">
                 PROJECTS
               </a>
             </li>
-            <li class="navigation">
-              <a href="#contact" class="navigationLink">
+            <li className="navigation">
+              <a href="#contact" className="navigationLink">
                 CONTACT
               </a>
             </li>
           </div>
         )}
       </div>
+      <i
+        onClick={() => {
+          setOpenNav(!openNav);
+        }}
+        className="fa-solid fa-bars "
+      ></i>
     </section>
   );
 };

@@ -1,66 +1,67 @@
-@import '../base/variables.scss';
+@import "../base/variables.scss";
 
-section.navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-    position: fixed;
-    z-index: 999;
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 110vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  right: 5rem;
+  z-index: 10;
 }
 
-
-section.navbar img {
-    width: 9rem;
-    border-radius: 5rem;
-    transition: all 2s;
-    cursor: pointer;
-    background: black;
-    margin: -5rem 0 0 3rem;
-    height: 8rem;
-}
+// section.navbar img {
+//   width: 9rem;
+//   border-radius: 5rem;
+//   transition: all 2s;
+//   cursor: pointer;
+//   background: black;
+//   margin: -5rem 0 0 3rem;
+//   height: 8rem;
+// }
 .menu {
-    position: relative;
+  position: relative;
+  z-index: 500;
 }
-
 
 .navList {
-    position: absolute;
-    top: 20rem;
-    right: 80rem;
+  position: absolute;
+  width: 150vw;
+  height: 200vh;
+  border-radius: 90%;
+  background: bisque;
+  top: 0;
+  right: -100rem;
+  opacity: 0.5;
+  padding-top: 20rem;
 }
 
 i.fa-solid.fa-bars {
-    font-size: 4rem;
-    color: azure;
-    border-radius: 50%;
-    padding: 3rem;
-    background: black;
-    margin: 3rem 5rem 5rem 0;
-    cursor: pointer;
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  font-size: 4rem;
+  color: azure;
+  border-radius: 50%;
+  padding: 3rem;
+  background: black;
+  margin: 3rem 5rem 5rem 0;
+  cursor: pointer;
+  z-index: 500;
 }
-.navList li a{
-        text-decoration: none;
-        font-size: 3rem;
-        font-weight: 600;
-        color: white;
+.navList li a {
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgb(11, 0, 0);
+  z-index: 600;
 }
 li.navigation {
-    text-align: center;
-    margin-bottom: 2rem;
-    list-style-type: none;
+  text-align: center;
+  margin-bottom: 2rem;
+  list-style-type: none;
+  z-index: 600;
 }
-
-// .clickedMenu {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-//     align-items: center;
-//     width: 100vw;
-//     position: fixed;
-//     z-index: 999;
-//     background: bisque;
-//     height: 100vh;
-//     opacity: 0.5;
-// }

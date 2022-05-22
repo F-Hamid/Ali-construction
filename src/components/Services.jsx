@@ -9,7 +9,7 @@ const Services = () => {
         {/* first service */}
         <div className="col">
           <i
-            class="fa-solid fa-building"
+            className="fa-solid fa-building"
             style={{ color: "white", fontSize: "3rem", marginBottom: "3rem" }}
           ></i>
           <h4 className="headingServices">Buildings</h4>
@@ -21,7 +21,7 @@ const Services = () => {
         {/* second service */}
         <div className="col">
           <i
-            class="fa-solid fa-dragon"
+            className="fa-solid fa-dragon"
             style={{ color: "white", fontSize: "3rem", marginBottom: "3rem" }}
           ></i>
 
@@ -31,7 +31,7 @@ const Services = () => {
         {/* third service */}
         <div className="col">
           <i
-            class="fa-solid fa-building"
+            className="fa-solid fa-building"
             style={{ color: "white", fontSize: "3rem", marginBottom: "3rem" }}
           ></i>
           <h4 className="headingServices">Installation and assembly work</h4>

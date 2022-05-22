@@ -23,7 +23,7 @@ const Contact = () => {
       address: address,
       message: message,
     });
-    console.log("Document written with ID: ", docRef.id);
+    // console.log("Document written with ID: ", docRef.id);
     setFirstName("");
     setLastName("");
     setEmail("");
